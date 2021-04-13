@@ -1,6 +1,8 @@
-# 🏠 Homepage
-
-# 🎨 Material Design Lite
+---
+title: 🏠 Homepage
+permalink: /
+---
+# 🎨 Material Design Lite in Jekyll
 
 Based on [getmdl](https://getmdl.io/) minimal material design!
 

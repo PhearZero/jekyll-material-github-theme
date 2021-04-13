@@ -1,8 +1,12 @@
-
+title: Jekyll Material Github Theme
+theme: jekyll-material-github-theme
+branch: main
 include:
   - .wiki
   - LICENSE.md
 exclude:
   - .idea/
+  - package.json
   - LICENSE
-theme: jekyll-material-github-theme
+  - Gemfile
+  - jekyll-material-github-theme.gemspec
