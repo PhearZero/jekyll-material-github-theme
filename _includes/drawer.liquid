@@ -1,0 +1,21 @@
+<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Links</span>
+    <nav class = "mdl-navigation">
+        {% for doc in site.pages %}
+            {% if doc.name contains '.md' and doc.title %}
+                <a class="mdl-navigation__link" href="{{ doc.url }}" >{{ doc.title }}</a>
+            {% endif %}
+            {% if doc.url contains '.wiki' %}
+                {%  assign has_wiki = true %}
+            {%  endif %}
+        {% endfor %}
+    </nav>
+    {% if has_wiki %}
+    <span class="mdl-layout-title">Wiki</span>
+    {% for doc in site.pages %}
+        {% if doc.url contains '.wiki' %}
+            <a class="mdl-navigation__link" href="{{ doc.url }}" >{{ doc.title }}</a>
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+</div>

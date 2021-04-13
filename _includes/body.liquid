@@ -1,0 +1,17 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    {% include header.liquid %}
+
+    {% include drawer.liquid %}
+    {% include edit.button.liquid %}
+    {% if site.github.is_organization_page %}
+        {% include organization-page.liquid %}
+    {% elsif site.github.is_user_page %}
+        {% include user-page.liquid %}
+    {% elsif site.github.is_project_page %}
+        {% include project-page.liquid %}
+    {% else %}
+        <div>Error!</div>
+    {% endif %}
+
+    {% include footer.liquid %}
+</div>

@@ -1,0 +1,42 @@
+<main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="projects">
+        <div class="page-content">
+            <div class="mdl-grid">
+                {% for repository in site.github.public_repositories %}
+                    {% if repository.has_pages and repository.has_downloads and repository.name != site.github.project_title %}
+                        <div class="mdl-cell mdl-cell--6-col mdl-cell--stretch">
+                            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title">
+                                    <h2 class="mdl-card__title-text">{{ repository.name }}</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    {{repository.description}}
+                                    <a href="{{ repository.homepage }}" class="btn btn-package"></a>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                       href="{{ repository.homepage | default: repository.html_url }}"
+                                    >
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="mdl-card__menu">
+                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                        <i class="material-icons">share</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="readme">
+        <div class="page-content">
+            <div class="mdl-cell mdl-cell&#45;&#45;12-col">
+              {{ content }}
+            </div>
+        </div>
+    </section>
+</main>

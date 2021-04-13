@@ -1,0 +1,22 @@
+{
+  "name": "jekyll-material-github-theme",
+  "version": "1.0.0",
+  "description": "Material Design Lite Theme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhearZero/jekyll-material-github-theme.git"
+  },
+  "author": {
+    "name" : "Michael J Feher",
+    "email" : "git@phearzero.com",
+    "url" : "https://phearzero.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhearZero/jekyll-material-github-theme/issues"
+  },
+  "homepage": "https://phearzero.com/jekyll-material-github-theme"
+}

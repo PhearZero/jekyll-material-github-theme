@@ -1,0 +1,8 @@
+
+include:
+  - .wiki
+  - LICENSE.md
+exclude:
+  - .idea/
+  - LICENSE
+theme: jekyll-material-github-theme

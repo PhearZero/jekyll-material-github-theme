@@ -1,0 +1,13 @@
+<header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <a class="mdl-navigation__link" href="{{ '/' | relative_url }}"><span class="mdl-layout-title">{{site.title | default: site.github.title}}</span></a>
+    </div>
+    {%  if site.github.is_organization_page %}
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#projects" class="mdl-layout__tab is-active">Projects</a>
+        <a href="#readme" class="mdl-layout__tab">Readme</a>
+    </div>
+    {% endif %}
+</header>
+
