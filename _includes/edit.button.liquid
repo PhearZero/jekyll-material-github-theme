@@ -1,5 +1,13 @@
+{% capture base_url %}{{site.github.repository_url}}{% endcapture %}
+
+{% if page.path contains "_wiki" %}
+        {% capture edit_path %}/wiki/{{page.path | replace: ".md", "" | replace: "_wiki/", ""}}/_edit{% endcapture %}
+{% else %}
+        {% capture edit_path %}/edit/{{site.branch | default: site.github.source.branch}}/{{page.path}}{% endcapture %}
+{% endif %}
+
 <a target="_blank"
-   href="{{site.github.repository_url}}/edit/{{site.branch | default: site.github.source.branch}}/{{page.path}}">
+   href="{{base_url}}{{ edit_path }}">
 <button class="edit-button
                mdl-button
                mdl-js-button

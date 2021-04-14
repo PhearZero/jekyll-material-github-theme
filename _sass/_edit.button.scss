@@ -4,3 +4,8 @@
   bottom: 75px;
   z-index: 10;
 }
+@media (max-width: 750px) {
+  .edit-button {
+    bottom: 110px;
+  }
+}
