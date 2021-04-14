@@ -1,5 +1,6 @@
 title: Material Design
 theme: jekyll-material-github-theme
+remote_theme: PhearZero/jekyll-material-github-theme
 branch: main
 include:
   - _wiki
