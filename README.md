@@ -3,7 +3,7 @@
 🚧 WARNING Under Construction 🚧
 
 This theme is built using [**Material Design Lite**](https://getmdl.io/){:target="_blank"} 
-minimal design. Find out more by going visiting the [**Getting Started**](_wiki/Getting%20Started.html) wiki!
+minimal design. Find out more by going visiting the [**Getting Started**](_wiki/Getting Started.md) wiki!
 
 ---
 
